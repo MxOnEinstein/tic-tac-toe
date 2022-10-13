@@ -1,0 +1,490 @@
+body{
+  background: #555;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.line1x {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px magenta;
+  position: absolute;
+  top: 63px;
+  width: 0px;
+  height: 3px;
+  background: magenta;
+  visibility: hidden;
+  transition: width 2s;
+}
+
+.line1o {
+  box-shadow: 2px 2px 5px aqua, -2px -2px 5px aqua;
+  position: absolute;
+  top: 63px;
+  width: 0px;
+  height: 3px;
+  background: aqua;
+  visibility: hidden;
+  transition: width 2s;
+}
+
+.line2x {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px magenta;
+  position: absolute;
+  top: 177px;
+  width: 0px;
+  height: 3px;
+  background: magenta;
+  visibility: hidden;
+  transition: width 2s;
+}
+
+.line2o {
+  box-shadow: 2px 2px 5px aqua, -2px -2px 5px aqua;
+  position: absolute;
+  top: 177px;
+  width: 0px;
+  height: 3px;
+  background: aqua;
+  visibility: hidden;
+  transition: width 2s;
+}
+
+.line3x {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px magenta;
+  position: absolute;
+  top: 291px;
+  width: 0px;
+  height: 3px;
+  background: magenta;
+  visibility: hidden;
+  transition: width 2s;
+}
+
+.line3o {
+  box-shadow: 2px 2px 5px aqua, -2px -2px 5px aqua;
+  position: absolute;
+  top: 291px;
+  width: 0px;
+  height: 3px;
+  background: aqua;
+  visibility: hidden;
+  transition: width 2s;
+}
+
+.wline1x {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px magenta;
+  position: absolute;
+  top: 29px;
+  width: 3px;
+  height: 0px;
+  background: magenta;
+  visibility: hidden;
+  transform: translate(-115px);
+  z-index: 1;
+  transition: height 1s;
+}
+
+.wline1o {
+  box-shadow: 2px 2px 5px aqua, -2px -2px 5px aqua;
+  position: absolute;
+  top: 29px;
+  width: 3px;
+  height: 0px;
+  background: aqua;
+  visibility: hidden;
+  transform: translate(-114px);
+  z-index: 1;
+  transition: height 1s;
+}
+
+.wline2x {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px magenta;
+  position: absolute;
+  top: 29px;
+  width: 3px;
+  height: 0px;
+  background: magenta;
+  visibility: hidden;
+  z-index: 1;
+  transition: height 1s;
+}
+
+.wline2o {
+  box-shadow: 2px 2px 5px aqua, -2px -2px 5px aqua;
+  position: absolute;
+  top: 29px;
+  width: 3px;
+  height: 0px;
+  background: aqua;
+  visibility: hidden;
+  z-index: 1;
+  transition: height 1s;
+}
+
+.wline3x {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px magenta;
+  position: absolute;
+  top: 29px;
+  width: 3px;
+  height: 0px;
+  background: magenta;
+  visibility: hidden;
+  transform: translate(114px);
+  z-index: 1;
+  transition: height 1s;
+}
+
+.wline3o {
+  box-shadow: 2px 2px 5px aqua, -2px -2px 5px aqua;
+  position: absolute;
+  top: 29px;
+  width: 3px;
+  height: 0px;
+  background: aqua;
+  visibility: hidden;
+  transform: translate(114px);
+  z-index: 1;
+  transition: height 1s;
+}
+
+.zline1x {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px magenta;
+  position: absolute;
+  top: -33px;
+  width: 3px;
+  height: 0px;
+  background: magenta;
+  visibility: hidden;
+  transform: rotate(135deg);
+  z-index: 1;
+  transition: width 2s, height 2s;
+}
+
+.zline1o {
+  box-shadow: 2px 2px 5px aqua, -2px -2px 5px aqua;
+  position: absolute;
+  top: -33px;
+  width: 3px;
+  height: 0px;
+  background: aqua;
+  visibility: hidden;
+  transform: rotate(135deg);
+  z-index: 1;
+  transition: width 2s, height 2s;
+}
+
+.zline2x {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px magenta;
+  position: absolute;
+  top: -33px;
+  width: 3px;
+  height: 0px;
+  background: magenta;
+  visibility: hidden;
+  transform: rotate(-135deg);
+  z-index: 1;
+  transition: width 2s, height 2s;
+}
+
+.zline2o {
+  box-shadow: 2px 2px 5px aqua, -2px -2px 5px aqua;
+  position: absolute;
+  top: -33px;
+  width: 3px;
+  height: 0px;
+  background: aqua;
+  visibility: hidden;
+  transform: rotate(-135deg);
+  z-index: 1;
+  transition: width 2s, height 2s;
+}
+
+.val1 {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #333;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font: small-caps bold 90px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.val1:hover {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #444;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font: small-caps bold 90px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.val2 {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #333;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font: small-caps bold 90px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.val2:hover {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #444;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font: small-caps bold 90px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.val3 {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #333;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font: small-caps bold 90px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.val3:hover {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #444;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font: small-caps bold 90px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.val4 {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #333;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font: small-caps bold 90px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.val4:hover {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #444;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font: small-caps bold 90px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.val5 {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #333;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font: small-caps bold 90px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.val5:hover {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #444;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font: small-caps bold 90px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.val6 {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #333;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font: small-caps bold 90px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.val6:hover {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #444;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font: small-caps bold 90px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.val7 {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #333;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font: small-caps bold 90px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.val7:hover {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #444;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font: small-caps bold 90px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.val8 {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #333;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font: small-caps bold 90px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.val8:hover {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #444;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font: small-caps bold 90px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.val9 {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #333;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font: small-caps bold 90px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.val9:hover {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #444;
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font: small-caps bold 90px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.win {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font: small-caps bold 50px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.res {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #333;
+  width: 330px;
+  height: 60px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font: small-caps bold 50px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.res:hover {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #444;
+  width: 330px;
+  height: 60px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font: small-caps bold 50px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+}
