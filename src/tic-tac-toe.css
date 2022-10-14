@@ -454,6 +454,8 @@ body{
 }
 
 .win {
+  width: 330px;
+  height: 60px;
   display: flex;
   justify-content: center;
   color: black;
@@ -487,4 +489,65 @@ body{
   color: black;
   font: small-caps bold 50px sans-serif;
   -webkit-text-stroke: 0.5px white;
+  cursor: pointer;
+}
+
+.mbl {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #333;
+  width: 158px;
+  height: 60px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font: small-caps bold 40px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+  transition: width 1s;
+}
+
+.mbl:hover {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #444;
+  width: 158px;
+  height: 60px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font: small-caps bold 40px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+  cursor: pointer;
+}
+
+.mbr {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #333;
+  width: 158px;
+  height: 60px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font: small-caps bold 40px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+  transition: width 1s;
+}
+
+.mbr:hover {
+  box-shadow: 2px 2px 5px magenta, -2px -2px 5px aqua;
+  background: #444;
+  width: 158px;
+  height: 60px;
+  border: 5px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font: small-caps bold 40px sans-serif;
+  -webkit-text-stroke: 0.5px white;
+  cursor: pointer;
 }
