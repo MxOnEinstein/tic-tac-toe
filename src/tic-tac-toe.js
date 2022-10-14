@@ -28,12 +28,254 @@ let o7 = 0;
 let o8 = 0;
 let o9 = 0;
 
+let lmb = document.querySelector('#lmb');
+let rmb = document.querySelector('#rmb');
+
 let area = document.querySelector('#area');
 let winner = document.querySelector('#win');
 let res = document.querySelector('#res');
 let zero = 0;
 let can = 0;
 
+lmb.addEventListener('click',event => {
+	lcl();
+  document.getElementsByClassName('mbl')[0].style.width = "330px";
+  document.getElementsByClassName('mbl')[0].style.position = "absolute";
+  lmb.style.pointerEvents='none';
+  rmb.style.pointerEvents='none';
+});
+
+function lcl() {
+a1.addEventListener('click',event => {
+	if(can == 0) {
+	setTimeout(`a1.innerHTML = "X"`, 300);
+  x1 = 1;
+  zero += 1;
+  can += 1;
+  document.getElementsByClassName('val1')[0].style.color = "magenta";
+  document.getElementsByClassName('val1')[0].style.transition = "transform .6s linear";
+  document.getElementsByClassName('val1')[0].style.transform = "perspective(600px) rotateY(-180deg)";
+  a1.style.pointerEvents='none';
+  check();
+  }else if(can == 1){
+  setTimeout(`a1.innerHTML = "O"`, 300);
+	o1 = 1;
+  zero += 1;
+  can -= 1;
+  document.getElementsByClassName('val1')[0].style.color = "aqua";
+  document.getElementsByClassName('val1')[0].style.transition = "transform .6s linear";
+  document.getElementsByClassName('val1')[0].style.transform = "perspective(600px) rotateY(180deg)";
+  a1.style.pointerEvents='none';
+  check();
+  }
+});
+
+a2.addEventListener('click',event => {
+	if(can == 0) {
+	setTimeout(`a2.innerHTML = "X"`, 300);
+  x2 = 1;
+  zero += 1;
+  can += 1;
+  document.getElementsByClassName('val2')[0].style.color = "magenta";
+  document.getElementsByClassName('val2')[0].style.transition = "transform .6s linear";
+  document.getElementsByClassName('val2')[0].style.transform = "perspective(600px) rotateY(-180deg)";
+  a2.style.pointerEvents='none';
+  check();
+  }else if(can == 1) {
+  setTimeout(`a2.innerHTML = "O"`, 300);
+	o2 = 1;
+  zero += 1;
+  can -= 1;
+  document.getElementsByClassName('val2')[0].style.color = "aqua";
+  document.getElementsByClassName('val2')[0].style.transition = "transform .6s linear";
+  document.getElementsByClassName('val2')[0].style.transform = "perspective(600px) rotateY(180deg)";
+  a2.style.pointerEvents='none';
+  check();
+  }
+});
+
+a3.addEventListener('click',event => {
+	if(can == 0) {
+	setTimeout(`a3.innerHTML = "X"`, 300);
+  x3 = 1;
+  zero += 1;
+  can += 1;
+  document.getElementsByClassName('val3')[0].style.color = "magenta";
+  document.getElementsByClassName('val3')[0].style.transition = "transform .6s linear";
+  document.getElementsByClassName('val3')[0].style.transform = "perspective(600px) rotateY(-180deg)";
+  a3.style.pointerEvents='none';
+  check();
+  }else if(can == 1){
+  setTimeout(`a3.innerHTML = "O"`, 300);
+	o3 = 1;
+  zero += 1;
+  can -= 1;
+  a3.style.pointerEvents='none';
+  document.getElementsByClassName('val3')[0].style.color = "aqua";
+  document.getElementsByClassName('val3')[0].style.transition = "transform .6s linear";
+  document.getElementsByClassName('val3')[0].style.transform = "perspective(600px) rotateY(180deg)";
+  check();
+  }
+});
+
+a4.addEventListener('click',event => {
+	if(can == 0) {
+	setTimeout(`a4.innerHTML = "X"`, 300);
+  x4 = 1;
+  zero += 1;
+  can += 1;
+  document.getElementsByClassName('val4')[0].style.color = "magenta";
+  document.getElementsByClassName('val4')[0].style.transition = "transform .6s linear";
+  document.getElementsByClassName('val4')[0].style.transform = "perspective(600px) rotateY(-180deg)";
+  a4.style.pointerEvents='none';
+  check();
+  }else if(can == 1) {
+  setTimeout(`a4.innerHTML = "O"`, 300);
+	o4 = 1;
+  zero += 1;
+  can -= 1;
+  document.getElementsByClassName('val4')[0].style.color = "aqua";
+  document.getElementsByClassName('val4')[0].style.transition = "transform .6s linear";
+  document.getElementsByClassName('val4')[0].style.transform = "perspective(600px) rotateY(180deg)";
+  a4.style.pointerEvents='none';
+  check();
+  }
+});
+
+a5.addEventListener('click',event => {
+	if(can == 0) {
+	setTimeout(`a5.innerHTML = "X"`, 300);
+  x5 = 1;
+  zero += 1;
+  can += 1;
+  document.getElementsByClassName('val5')[0].style.color = "magenta";
+  document.getElementsByClassName('val5')[0].style.transition = "transform .6s linear";
+  document.getElementsByClassName('val5')[0].style.transform = "perspective(600px) rotateY(-180deg)";
+  a5.style.pointerEvents='none';
+  check();
+  }else if(can == 1) {
+  setTimeout(`a5.innerHTML = "O"`, 300);
+	o5 = 1;
+  zero += 1;
+  can -= 1;
+  document.getElementsByClassName('val5')[0].style.color = "aqua";
+  document.getElementsByClassName('val5')[0].style.transition = "transform .6s linear";
+  document.getElementsByClassName('val5')[0].style.transform = "perspective(600px) rotateY(180deg)";
+  a5.style.pointerEvents='none';
+  check();
+  }
+});
+
+a6.addEventListener('click',event => {
+	if(can == 0) {
+	setTimeout(`a6.innerHTML = "X"`, 300);
+  x6 = 1;
+  zero += 1;
+  can += 1;
+  document.getElementsByClassName('val6')[0].style.color = "magenta";
+  document.getElementsByClassName('val6')[0].style.transition = "transform .6s linear";
+  document.getElementsByClassName('val6')[0].style.transform = "perspective(600px) rotateY(-180deg)";
+  a6.style.pointerEvents='none';
+  check();
+  }else if(can == 1) {
+  setTimeout(`a6.innerHTML = "O"`, 300);
+	o6 = 1;
+  zero += 1;
+  can -= 1;
+  document.getElementsByClassName('val6')[0].style.color = "aqua";
+  document.getElementsByClassName('val6')[0].style.transition = "transform .6s linear";
+  document.getElementsByClassName('val6')[0].style.transform = "perspective(600px) rotateY(180deg)";
+  a6.style.pointerEvents='none';
+  check();
+  }
+});
+
+a7.addEventListener('click',event => {
+	if(can == 0) {
+	setTimeout(`a7.innerHTML = "X"`, 300);
+  x7 = 1;
+  zero += 1;
+  can += 1;
+  document.getElementsByClassName('val7')[0].style.color = "magenta";
+  document.getElementsByClassName('val7')[0].style.transition = "transform .6s linear";
+  document.getElementsByClassName('val7')[0].style.transform = "perspective(600px) rotateY(-180deg)";
+  a7.style.pointerEvents='none';
+  check();
+  }else if(can == 1) {
+  setTimeout(`a7.innerHTML = "O"`, 300);
+	o7 = 1;
+  zero += 1;
+  can -= 1;
+  document.getElementsByClassName('val7')[0].style.color = "aqua";
+  document.getElementsByClassName('val7')[0].style.transition = "transform .6s linear";
+  document.getElementsByClassName('val7')[0].style.transform = "perspective(600px) rotateY(180deg)";
+  a7.style.pointerEvents='none';
+  check();
+  }
+});
+
+a8.addEventListener('click',event => {
+	if(can == 0) {
+	setTimeout(`a8.innerHTML = "X"`, 300);
+  x8 = 1;
+  zero += 1;
+  can += 1;
+  document.getElementsByClassName('val8')[0].style.color = "magenta";
+  document.getElementsByClassName('val8')[0].style.transition = "transform .6s linear";
+  document.getElementsByClassName('val8')[0].style.transform = "perspective(600px) rotateY(-180deg)";
+  a8.style.pointerEvents='none';
+  check();
+  }else if(can == 1) {
+	setTimeout(`a8.innerHTML = "O"`, 300);
+	o8 = 1;
+  zero += 1;
+  can -= 1;
+  document.getElementsByClassName('val8')[0].style.color = "aqua";
+  document.getElementsByClassName('val8')[0].style.transition = "transform .6s linear";
+  document.getElementsByClassName('val8')[0].style.transform = "perspective(600px) rotateY(180deg)";
+  a8.style.pointerEvents='none';
+  check();
+  }
+});
+
+a9.addEventListener('click',event => {
+	if(can == 0) {
+	setTimeout(`a9.innerHTML = "X"`, 300);
+  x9 = 1;
+  zero += 1;
+  can += 1;
+  document.getElementsByClassName('val9')[0].style.color = "magenta";
+  document.getElementsByClassName('val9')[0].style.transition = "transform .6s linear";
+  document.getElementsByClassName('val9')[0].style.transform = "perspective(600px) rotateY(-180deg)";
+  a9.style.pointerEvents='none';
+  check();
+  }else if(can == 1) {
+  setTimeout(`a9.innerHTML = "O"`, 300);
+	o9 = 1;
+  zero += 1;
+  can -= 1;
+  document.getElementsByClassName('val9')[0].style.color = "aqua";
+  document.getElementsByClassName('val9')[0].style.transition = "transform .6s linear";
+  document.getElementsByClassName('val9')[0].style.transform = "perspective(600px) rotateY(180deg)";
+  a9.style.pointerEvents='none';
+  check();
+  }
+});
+}
+res.addEventListener('click',event => {
+	location.reload();
+});
+
+//------------------------------------------------------------------------------------------------
+rmb.addEventListener('click',event => {
+	rcl();
+  document.getElementsByClassName('mbr')[0].style.width = "330px";
+  document.getElementsByClassName('mbr')[0].style.position = "absolute";
+  rmb.style.pointerEvents='none';
+  lmb.style.pointerEvents='none';
+});
+
+function rcl() {
 a1.addEventListener('click',event => {
 	if(can == 0) {
 	setTimeout(`a1.innerHTML = "X"`, 300);
@@ -285,11 +527,10 @@ a9.addEventListener('contextmenu',event => {
   check();
   }
 });
-
 res.addEventListener('click',event => {
 	location.reload();
 });
-
+}
 
 function check() {//---------------------------------- for X
 	if(x1 == 1 && x2 == 1 && x3 == 1){//w1
