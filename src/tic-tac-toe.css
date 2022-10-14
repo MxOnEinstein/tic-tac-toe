@@ -454,8 +454,6 @@ body{
 }
 
 .win {
-  width: 330px;
-  height: 60px;
   display: flex;
   justify-content: center;
   color: black;
